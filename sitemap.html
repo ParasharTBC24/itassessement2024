@@ -4,21 +4,50 @@
     <meta charset="UTF-8">
     <title>Site Map</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add this style to ensure the footer stays at the bottom */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+        main {
+            flex: 1;
+        }
+        footer {
+            background-color: #1B1106;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            font-family: 'Alcester', sans-serif;
+            width: 100%;
+            margin-top: auto; /* Ensures footer is pushed to bottom */
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Site Map</h1>
     </header>
+    <nav>
         <h2>Pages</h2>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="contact.html">Contact Us</a></li>
             <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="brewing_methods.html">Brewing Methods</a></li>
+            <li><a href="shop.html">Shop</a></li>
         </ul>
+        <h2>Resources</h2>
+        <ul>
+            <li><a href="styles.css">CSS Stylesheet</a></li>
+            <li><a href="script.js">JavaScript File</a></li>
         </ul>
+    </nav>
     <footer>
-        <p> Java Joint</p>
+        <p>&copy; 2024 Java Joint</p>
     </footer>
 </body>
 </html>
